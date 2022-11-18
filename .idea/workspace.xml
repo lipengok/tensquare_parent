@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ed66375-abc5-41d7-ae1a-79272332ec58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/redis/ArticleRedis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,6 +46,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2HZXFNb5AWNPMchghbgPb3YLOa8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -52,6 +72,7 @@
       <recent name="base.com.lp.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\tensquare_parent\tensquare_base\sql\tensquare_base" />
       <recent name="D:\Projects\java_resurce\lipeng_service\tensquare_parent\tensquare_base\src\main\resources" />
       <recent name="D:\Projects\java_resurce\lipeng_service\tensquare_parent\resource" />
     </key>
@@ -103,7 +124,7 @@
       <workItem from="1668583979215" duration="1854000" />
       <workItem from="1668646682690" duration="12734000" />
       <workItem from="1668732825076" duration="11035000" />
-      <workItem from="1668758115115" duration="816000" />
+      <workItem from="1668758115115" duration="2353000" />
     </task>
     <servers />
   </component>
