@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ed66375-abc5-41d7-ae1a-79272332ec58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_article/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_article/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare.search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare.search/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,10 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lp.search" />
+      <recent name="com.lp.article" />
       <recent name="com.lp.article.service.impl" />
       <recent name="common.com.lp.utils" />
       <recent name="base.com.lp.controller" />
-      <recent name="base.com.lp.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\github\tensquare_parent\tensquare.search\src\main\resources" />
@@ -143,7 +142,7 @@
       <workItem from="1668732825076" duration="11035000" />
       <workItem from="1668758115115" duration="2952000" />
       <workItem from="1668855557755" duration="616000" />
-      <workItem from="1669252449090" duration="11701000" />
+      <workItem from="1669252449090" duration="13615000" />
     </task>
     <servers />
   </component>
