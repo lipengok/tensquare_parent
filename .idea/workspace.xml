@@ -4,55 +4,8 @@
     <list default="true" id="1ed66375-abc5-41d7-ae1a-79272332ec58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/logs/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/logs/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/BaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/BaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/controller/EnterpriseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/controller/EnterpriseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/controller/LabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/controller/LabelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/controller/PlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/controller/PlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/controller/ProblemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/controller/ProblemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/controller/RecruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/controller/RecruitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/dao/EnterpriseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/dao/EnterpriseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/dao/LabelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/dao/LabelDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/dao/PlDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/dao/PlDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/dao/ProblemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/dao/ProblemDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/dao/RecruitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/dao/RecruitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/dao/ReplyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/dao/ReplyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/pojo/Enterprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Enterprise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/pojo/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/pojo/Pl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Pl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/pojo/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/pojo/Recruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Recruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/pojo/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Reply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/redis/ArticleRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/redis/ArticleRedis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/EnterpriseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/EnterpriseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/LabelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/LabelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/PlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/PlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/ProblemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/ProblemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/RecruitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/RecruitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/ReplyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/impl/EnterpriseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/impl/EnterpriseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/impl/LabelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/impl/LabelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/impl/PlServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/impl/PlServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/impl/ProblemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/impl/ProblemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/impl/RecruitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/impl/RecruitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/base/com/lp/service/impl/ReplyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/service/impl/ReplyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/src/main/java/common/com/lp/entity/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_common/src/main/java/com/lp/common/entity/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/src/main/java/common/com/lp/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_common/src/main/java/com/lp/common/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/src/main/java/common/com/lp/entity/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_common/src/main/java/com/lp/common/entity/StatusCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/src/main/java/common/com/lp/exception/BaseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_common/src/main/java/com/lp/common/exception/BaseExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/src/main/java/common/com/lp/utils/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_common/src/main/java/com/lp/common/utils/LogUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/target/classes/common/com/lp/entity/PageResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/target/classes/common/com/lp/entity/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/target/classes/common/com/lp/entity/StatusCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/target/classes/common/com/lp/exception/BaseExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_common/target/classes/common/com/lp/utils/LogUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_article/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_article/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tensquare_spit/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tensquare.search/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -114,15 +67,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lp.article.service.impl" />
       <recent name="common.com.lp.utils" />
       <recent name="base.com.lp.controller" />
       <recent name="base.com.lp.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\tensquare_parent\tensquare.search\src\main\resources" />
+      <recent name="E:\github\tensquare_parent\tensquare.search\src\main\java\com\lp\search" />
       <recent name="E:\github\tensquare_parent\tensquare_spit\src\main\resources" />
       <recent name="E:\github\tensquare_parent\tensquare_base\sql\tensquare_base" />
       <recent name="D:\Projects\java_resurce\lipeng_service\tensquare_parent\tensquare_base\src\main\resources" />
-      <recent name="D:\Projects\java_resurce\lipeng_service\tensquare_parent\resource" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -188,7 +143,7 @@
       <workItem from="1668732825076" duration="11035000" />
       <workItem from="1668758115115" duration="2952000" />
       <workItem from="1668855557755" duration="616000" />
-      <workItem from="1669252449090" duration="8631000" />
+      <workItem from="1669252449090" duration="11701000" />
     </task>
     <servers />
   </component>

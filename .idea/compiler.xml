@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tensquare_base" />
         <module name="tensquare_spit" />
+        <module name="tensquaresearch" />
         <module name="tensquare_common" />
         <module name="tensquare_article" />
       </profile>
