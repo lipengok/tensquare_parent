@@ -3,3 +3,8 @@
 使用到的技术：springboot，springmvc，springdata。springclound。
 spring全家桶。
 
+mogodb启动
+新建目录：datadb_2022_11
+cmd到新建目录：datadb_2022_11
+mongod --dbpath ./
+

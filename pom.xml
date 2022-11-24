@@ -12,6 +12,8 @@
     <modules>
         <module>tensquare_common</module>
         <module>tensquare_base</module>
+        <module>tensquare_spit</module>
+        <module>tensquare_article</module>
     </modules>
 
     <parent>
