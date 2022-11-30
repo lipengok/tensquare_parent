@@ -1,9 +1,10 @@
 package com.lp.search.pojo;
 
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldIndex;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 /**
  * indexName: 索引名称
@@ -19,16 +20,18 @@ import org.springframework.data.elasticsearch.annotations.FieldIndex;
  * @Version 1.0
  */
 @Document(indexName="tensquare",type="article")
+@Data
 public class Article {
 
     @Id
     private String id;//ID
 
-    @Field(index = FieldIndex.analyzed, analyzer="ik_max_word",searchAnalyzer="ik_max_word")
+    @Field(index = true, type = FieldType.Text, analyzer="ik_max_word",searchAnalyzer="ik_max_word")
     private String title;//标题
 
-    @Field(index = FieldIndex.analyzed, analyzer="ik_max_word",searchAnalyzer="ik_max_word")
+    @Field(index = true, type = FieldType.Text, analyzer="ik_max_word",searchAnalyzer="ik_max_word")
     private String content;//文章正文
 
+    @Field(type = FieldType.Text)
     private String state;//审核状态
 }

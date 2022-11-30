@@ -20,7 +20,7 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
     private ArticleSearchDao articleSearchDao;
 
     /**
-     * 增加文章
+     * 增加文章索引
      *
      * @param article
      */
@@ -30,7 +30,7 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
 
     @Override
     public Page<Article> findByTitleLike(String keywords, int page, int size) {
-        PageRequest pageRequest = new PageRequest(page, size);
+        PageRequest pageRequest = PageRequest.of(page, size);
         return articleSearchDao.findByTitleOrContentLike(keywords, keywords, pageRequest);
     }
 }
