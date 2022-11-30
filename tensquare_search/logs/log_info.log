@@ -1,0 +1,30 @@
+2022-11-28 11:10:33.094[main][org.springframework.boot.StartupInfoLogger:50] INFO  - Starting SearchApplication on DESKTOP-T987IHU with PID 2740 (E:\github\tensquare_parent\tensquare_search\target\classes started by TY in E:\github\tensquare_parent)
+2022-11-28 11:10:33.103[main][org.springframework.boot.SpringApplication:646] INFO  - No active profile set, falling back to default profiles: default
+2022-11-28 11:10:34.473[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:244] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-28 11:10:34.476[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:126] INFO  - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-11-28 11:10:34.565[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:182] INFO  - Finished Spring Data repository scanning in 72ms. Found 1 repository interfaces.
+2022-11-28 11:10:34.577[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:244] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-28 11:10:34.578[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:126] INFO  - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-11-28 11:10:34.593[main][org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:363] INFO  - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lp.search.com.lp.dao.ArticleSearchDao.
+2022-11-28 11:10:34.593[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:182] INFO  - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2022-11-28 11:10:35.167[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] INFO  - Tomcat initialized with port(s): 9002 (http)
+2022-11-28 11:10:35.184[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-9002"]
+2022-11-28 11:10:35.196[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-28 11:10:35.196[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-11-28 11:10:35.350[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-28 11:10:35.350[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:283] INFO  - Root WebApplicationContext: initialization completed in 2179 ms
+2022-11-28 11:10:36.948[main][org.elasticsearch.plugins.PluginsService:190] INFO  - no modules loaded
+2022-11-28 11:10:36.950[main][org.elasticsearch.plugins.PluginsService:193] INFO  - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2022-11-28 11:10:36.951[main][org.elasticsearch.plugins.PluginsService:193] INFO  - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022-11-28 11:10:36.951[main][org.elasticsearch.plugins.PluginsService:193] INFO  - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022-11-28 11:10:36.951[main][org.elasticsearch.plugins.PluginsService:193] INFO  - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2022-11-28 11:10:36.951[main][org.elasticsearch.plugins.PluginsService:193] INFO  - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022-11-28 11:10:40.694[main][org.springframework.data.elasticsearch.client.TransportClientFactoryBean:88] INFO  - Adding transport node : 127.0.0.1:9300
+2022-11-28 11:10:44.505[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:171] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-28 11:10:46.635[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-9002"]
+2022-11-28 11:10:46.653[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:202] INFO  - Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-28 11:10:46.656[main][org.springframework.boot.StartupInfoLogger:59] INFO  - Started SearchApplication in 14.815 seconds (JVM running for 17.747)
+2022-11-28 11:10:46.658[main][com.lp.search.SearchApplication:18] INFO  - 项目初始化完成
+2022-11-28 11:11:24.691[http-nio-9002-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-28 11:11:24.692[http-nio-9002-exec-1][org.springframework.web.servlet.FrameworkServlet:524] INFO  - Initializing Servlet 'dispatcherServlet'
+2022-11-28 11:11:24.703[http-nio-9002-exec-1][org.springframework.web.servlet.FrameworkServlet:546] INFO  - Completed initialization in 11 ms

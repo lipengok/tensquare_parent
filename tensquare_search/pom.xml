@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.lp</groupId>
-    <artifactId>tensquare.search</artifactId>
+    <artifactId>tensquare_search</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

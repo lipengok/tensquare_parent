@@ -1,0 +1,16 @@
+elasticsearch对应的spring boot版本
+spring boot版本：2.1.6.RELEASE
+elasticsearch版本：6.4.3
+
+spring boot引入es的依赖：
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+</dependency>
+
+spring boot项目初始化
+读取es的配置文件
+配置各种参数
+配置es实体类映射，index和type没有的时候会自动创建。
+
+新版本es（本版本也是新版本）中一个index只能对应type。

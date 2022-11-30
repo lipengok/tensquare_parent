@@ -31,12 +31,12 @@ public class ArticleController {
         return new Result(true, StatusCode.OK, "操作成功");
     }
 
-    @RequestMapping(value = "/search/{keywords}/{page}/{size}", method =
-            RequestMethod.GET)
+    @RequestMapping(value = "/search/{keywords}/{page}/{size}", method = RequestMethod.GET)
     public Result findByTitleLike(@PathVariable String keywords,
                                   @PathVariable int page, @PathVariable int size) {
         Page<Article> articlePage =
                 articleSearchService.findByTitleLike(keywords, page, size);
+        log.debug("标题[{}]查询到[{}]条数据=>[{}]", keywords, articlePage.getNumber(), articlePage);
         return new Result(true, StatusCode.OK, "查询成功",
                 new PageResult<Article>(articlePage.getTotalElements(),
                         articlePage.getContent()));
