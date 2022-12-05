@@ -1,1 +1,5 @@
 将rabbitmq里面的验证码从队列中取出来。
+
+
+rabbitmq的页面url
+http://localhost:15672/

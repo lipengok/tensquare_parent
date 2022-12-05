@@ -1,0 +1,2 @@
+2022-12-05 11:15:21.919[http-nio-8083-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper:127] WARN  - SQL Error: 1054, SQLState: 42S22
+2022-12-05 11:21:18.365[http-nio-8083-exec-1][org.hibernate.engine.jdbc.spi.SqlExceptionHelper:127] WARN  - SQL Error: 1054, SQLState: 42S22

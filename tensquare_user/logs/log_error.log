@@ -1,0 +1,2 @@
+2022-12-05 11:15:21.922[http-nio-8083-exec-2][org.hibernate.engine.jdbc.spi.SqlExceptionHelper:129] ERROR - Unknown column 'admin0_.pwd' in 'field list'
+2022-12-05 11:21:18.366[http-nio-8083-exec-1][org.hibernate.engine.jdbc.spi.SqlExceptionHelper:129] ERROR - Unknown column 'admin0_.pwd' in 'field list'

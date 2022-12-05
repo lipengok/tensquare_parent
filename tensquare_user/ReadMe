@@ -1,3 +1,15 @@
 将验证码信息写到rabbitmq队列里面。
 将用户信息写到MySQl数据库里面。
 将验证码信息写到redis里。
+
+spring jpa实体类实现自动生成创建/修改日期：
+https://blog.csdn.net/jj89929665/article/details/119487947
+
+BCrypt加密
+1，什么是BCrypt机密：
+BCrypt加密是强哈希加密，每次加密的结果都是不一样的。
+2，spring提供标准的类来实现BCrypt加密：
+Spring Security提供了BCryptPasswordEncoder类
+通过方法：
+public String encode(CharSequence rawPassword)
+实现加密。

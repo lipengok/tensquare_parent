@@ -1,0 +1,71 @@
+2022-12-01 09:11:11.561[main][org.springframework.boot.StartupInfoLogger:48] INFO  - Starting SmsApplication on DESKTOP-T987IHU with PID 13268 (E:\github\tensquare_parent\tensquare_sms\target\classes started by TY in E:\github\tensquare_parent)
+2022-12-01 09:11:11.561[main][org.springframework.boot.SpringApplication:662] INFO  - No active profile set, falling back to default profiles: default
+2022-12-01 09:11:11.652[main][org.springframework.context.support.AbstractApplicationContext:582] INFO  - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Thu Dec 01 09:11:11 CST 2022]; root of context hierarchy
+2022-12-01 09:11:11.853[background-preinit][org.hibernate.validator.internal.util.Version:30] INFO  - HV000001: Hibernate Validator 5.2.4.Final
+2022-12-01 09:11:14.030[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:170] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-01 09:11:14.390[main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] INFO  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$534dfbf8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-01 09:11:15.029[main][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 09:11:15.054[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Starting service Tomcat
+2022-12-01 09:11:15.056[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Starting Servlet Engine: Apache Tomcat/8.5.11
+2022-12-01 09:11:15.574[localhost-startStop-1][org.apache.juli.logging.DirectJDKLog:179] INFO  - Initializing Spring embedded WebApplicationContext
+2022-12-01 09:11:15.576[localhost-startStop-1][org.springframework.boot.context.embedded.EmbeddedWebApplicationContext:276] INFO  - Root WebApplicationContext: initialization completed in 3924 ms
+2022-12-01 09:11:15.970[localhost-startStop-1][org.springframework.boot.web.servlet.ServletRegistrationBean:190] INFO  - Mapping servlet: 'dispatcherServlet' to [/]
+2022-12-01 09:11:15.980[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-12-01 09:11:15.980[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-12-01 09:11:15.980[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-12-01 09:11:15.980[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'requestContextFilter' to: [/*]
+2022-12-01 09:11:16.656[main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] INFO  - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@595b007d: startup date [Thu Dec 01 09:11:11 CST 2022]; root of context hierarchy
+2022-12-01 09:11:16.756[main][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] INFO  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-12-01 09:11:16.756[main][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] INFO  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-12-01 09:11:16.825[main][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] INFO  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-12-01 09:11:16.825[main][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] INFO  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-12-01 09:11:16.887[main][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] INFO  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-12-01 09:11:17.451[main][org.springframework.jmx.export.MBeanExporter:431] INFO  - Registering beans for JMX exposure on startup
+2022-12-01 09:11:17.451[main][org.springframework.jmx.export.MBeanExporter:916] INFO  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2022-12-01 09:11:17.451[main][org.springframework.jmx.export.MBeanExporter:678] INFO  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2022-12-01 09:11:17.498[main][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] INFO  - Starting beans in phase -2147482648
+2022-12-01 09:11:17.498[main][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] INFO  - Starting beans in phase 2147483647
+2022-12-01 09:11:17.529[SimpleAsyncTaskExecutor-1][org.springframework.amqp.rabbit.connection.AbstractConnectionFactory:301] INFO  - Created new connection: SimpleConnection@2855775 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50092]
+2022-12-01 09:11:17.592[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 09:11:17.592[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Starting ProtocolHandler [http-nio-8080]
+2022-12-01 09:11:17.608[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Using a shared selector for servlet write/read
+2022-12-01 09:11:17.623[main][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:198] INFO  - Tomcat started on port(s): 8080 (http)
+2022-12-01 09:11:17.639[main][org.springframework.boot.StartupInfoLogger:57] INFO  - Started SmsApplication in 7.268 seconds (JVM running for 13.828)
+2022-12-01 09:11:17.639[main][com.lp.SmsApplication:18] INFO  - 项目初始化完成
+2022-12-01 10:26:55.808[main][org.springframework.boot.StartupInfoLogger:48] INFO  - Starting SmsApplication on DESKTOP-T987IHU with PID 9908 (E:\github\tensquare_parent\tensquare_sms\target\classes started by TY in E:\github\tensquare_parent)
+2022-12-01 10:26:55.810[main][org.springframework.boot.SpringApplication:662] INFO  - No active profile set, falling back to default profiles: default
+2022-12-01 10:26:55.918[main][org.springframework.context.support.AbstractApplicationContext:582] INFO  - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c5eefef: startup date [Thu Dec 01 10:26:55 CST 2022]; root of context hierarchy
+2022-12-01 10:26:56.207[background-preinit][org.hibernate.validator.internal.util.Version:30] INFO  - HV000001: Hibernate Validator 5.2.4.Final
+2022-12-01 10:26:58.667[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:170] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-12-01 10:26:59.081[main][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325] INFO  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$63791124] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-01 10:26:59.613[main][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-12-01 10:26:59.628[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Starting service Tomcat
+2022-12-01 10:26:59.628[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Starting Servlet Engine: Apache Tomcat/8.5.11
+2022-12-01 10:26:59.738[localhost-startStop-1][org.apache.juli.logging.DirectJDKLog:179] INFO  - Initializing Spring embedded WebApplicationContext
+2022-12-01 10:26:59.738[localhost-startStop-1][org.springframework.boot.context.embedded.EmbeddedWebApplicationContext:276] INFO  - Root WebApplicationContext: initialization completed in 3820 ms
+2022-12-01 10:26:59.929[localhost-startStop-1][org.springframework.boot.web.servlet.ServletRegistrationBean:190] INFO  - Mapping servlet: 'dispatcherServlet' to [/]
+2022-12-01 10:26:59.944[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-12-01 10:26:59.944[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-12-01 10:26:59.944[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-12-01 10:26:59.944[localhost-startStop-1][org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:258] INFO  - Mapping filter: 'requestContextFilter' to: [/*]
+2022-12-01 10:27:00.367[main][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534] INFO  - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c5eefef: startup date [Thu Dec 01 10:26:55 CST 2022]; root of context hierarchy
+2022-12-01 10:27:00.444[main][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] INFO  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-12-01 10:27:00.444[main][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:543] INFO  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-12-01 10:27:00.505[main][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] INFO  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-12-01 10:27:00.505[main][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] INFO  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-12-01 10:27:00.552[main][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:362] INFO  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-12-01 10:27:01.110[main][org.springframework.jmx.export.MBeanExporter:431] INFO  - Registering beans for JMX exposure on startup
+2022-12-01 10:27:01.122[main][org.springframework.jmx.export.MBeanExporter:916] INFO  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2022-12-01 10:27:01.126[main][org.springframework.jmx.export.MBeanExporter:678] INFO  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2022-12-01 10:27:01.163[main][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] INFO  - Starting beans in phase -2147482648
+2022-12-01 10:27:01.164[main][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup:343] INFO  - Starting beans in phase 2147483647
+2022-12-01 10:27:01.214[SimpleAsyncTaskExecutor-1][org.springframework.amqp.rabbit.connection.AbstractConnectionFactory:301] INFO  - Created new connection: SimpleConnection@23209512 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 51548]
+2022-12-01 10:27:01.265[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-01 10:27:01.283[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Starting ProtocolHandler [http-nio-8080]
+2022-12-01 10:27:01.293[main][org.apache.juli.logging.DirectJDKLog:179] INFO  - Using a shared selector for servlet write/read
+2022-12-01 10:27:01.309[main][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:198] INFO  - Tomcat started on port(s): 8080 (http)
+2022-12-01 10:27:01.316[main][org.springframework.boot.StartupInfoLogger:57] INFO  - Started SmsApplication in 6.605 seconds (JVM running for 9.807)
+2022-12-01 10:27:01.316[main][com.lp.SmsApplication:18] INFO  - 项目初始化完成
+2022-12-01 10:30:25.830[SimpleAsyncTaskExecutor-1][com.lp.handler.SmsHandler:22] INFO  - 从队列smsQueue取出任务
+2022-12-01 10:30:46.368[SimpleAsyncTaskExecutor-1][com.lp.handler.SmsHandler:22] INFO  - 从队列smsQueue取出任务
+2022-12-01 10:30:58.930[SimpleAsyncTaskExecutor-1][com.lp.handler.SmsHandler:22] INFO  - 从队列smsQueue取出任务

@@ -1,6 +1,7 @@
 package com.lp.server.impl;
 
 import com.lp.dao.UserDao;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -19,6 +20,7 @@ import java.util.concurrent.TimeUnit;
  * @Date 2022/11/30 11:06
  * @Version 1.0
  */
+@Slf4j
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -44,7 +46,7 @@ public class UserServiceImpl implements UserService {
         if (code < min) {
             code = code + min;
         }
-        System.out.println(mobile + "收到验证码是：" + code);
+        log.debug("向手机尾号为=>[{}]的用户发送验证码[{}]", mobile, code);
         //将验证码放入redis
         redisTemplate.opsForValue().set("smscode_" + mobile, code + "", 5, TimeUnit.MINUTES);//五分钟过期
         //将验证码和手机号发动到rabbitMQ中
