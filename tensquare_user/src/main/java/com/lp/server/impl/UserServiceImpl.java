@@ -1,10 +1,14 @@
 package com.lp.server.impl;
 
+import com.alibaba.fastjson2.JSON;
 import com.lp.dao.UserDao;
+import com.lp.pojo.entity.SmsCode;
+import com.lp.redis.RedisOpera;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.lp.pojo.User;
 import com.lp.server.UserService;
@@ -25,19 +29,23 @@ import java.util.concurrent.TimeUnit;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisOpera redisOpera;
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private BCryptPasswordEncoder encoder;
 
     @Autowired
     private UserDao userDao;
 
     /**
      * 发送短信验证码
+     *
      * @param mobile 手机号
      */
-    public void sendSms(String mobile) {
+    public String sendSms(String mobile) {
         //生成6位短信验证码
         Random random = new Random();
         int max = 999999;//最大数
@@ -46,32 +54,40 @@ public class UserServiceImpl implements UserService {
         if (code < min) {
             code = code + min;
         }
-        log.debug("向手机尾号为=>[{}]的用户发送验证码[{}]", mobile, code);
+        String resCode = String.valueOf(code);
+        log.debug("向手机尾号为=>[{}]的用户发送验证码[{}]", mobile, resCode);
         //将验证码放入redis
-        redisTemplate.opsForValue().set("smscode_" + mobile, code + "", 5, TimeUnit.MINUTES);//五分钟过期
+        //五分钟过期
+        redisOpera.setStr("sms", resCode, 5L);
         //将验证码和手机号发动到rabbitMQ中
         Map<String, String> map = new HashMap();
         map.put("mobile", mobile);
         map.put("code", code + "");
         rabbitTemplate.convertAndSend("smsExchange", "smsRouting", map);
+        return resCode;
     }
 
     /**
      * 增加
+     *
      * @param user 用户
      * @param code 用户填写的验证码
      */
-    public void add(User user, String code) {
+    public User add(User user, String code) {
+        String key = "sms";
         //判断验证码是否正确
-        String syscode = (String)redisTemplate.opsForValue().get("smscode_" + user.getMobile());
+        String smsCode = redisOpera.getStr(key);
+        log.info("从缓存中获取的键[{}]值[{}]", key, smsCode);
         //提取系统正确的验证码
-        if(syscode==null){
+        if (smsCode == null) {
             throw new RuntimeException("请点击获取短信验证码");
         }
-        if(!syscode.equals(code)){
+        if (!smsCode.equals(code)) {
             throw new RuntimeException("验证码输入不正确");
         }
-        user.setId( user.getId() );
+        user.setId(user.getId());
+        user.setName(user.getName());
+        user.setPsw(encoder.encode(user.getPsw()));
         user.setFollowCount(0);
         user.setFansCount(0);
         user.setOnline(0L);
@@ -79,5 +95,38 @@ public class UserServiceImpl implements UserService {
         user.setUpdDate(new Date());
         user.setLastDate(new Date());
         userDao.save(user);
+        return user;
+    }
+
+    /**
+     * 根据手机号和密码查询用户
+     *
+     * @param mobile
+     * @param password
+     * @return
+     */
+    public User findByMobileAndPassword(String mobile,String password){
+        User user = userDao.findByMobile(mobile);
+        if(user!=null && encoder.matches(password,user.getPsw())){
+            return user;
+        }else{
+            return null;
+        }
+    }
+
+    /**
+     * 根据用户名和密码查询用户
+     *
+     * @param name
+     * @param password
+     * @return
+     */
+    public User findByNameAndPassword(String name, String password){
+        User user = userDao.findByName(name);
+        if(user!=null && encoder.matches(password,user.getPsw())){
+            return user;
+        }else{
+            return null;
+        }
     }
 }

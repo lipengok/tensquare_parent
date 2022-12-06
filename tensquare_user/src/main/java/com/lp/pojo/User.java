@@ -23,6 +23,12 @@ public class User {
     @Id
     private String id;
 
+    // 用户名
+    private String name;
+
+    // 密码
+    private String psw;
+
     // 手机号
     private String mobile;
 

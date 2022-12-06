@@ -3,7 +3,7 @@ package com.lp.controller;
 import com.lp.common.entity.Result;
 import com.lp.common.entity.StatusCode;
 import com.lp.pojo.Admin;
-import com.lp.pojo.Login;
+import com.lp.pojo.entity.Login;
 import com.lp.server.impl.AdminServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

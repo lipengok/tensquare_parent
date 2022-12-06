@@ -10,4 +10,8 @@ import com.lp.pojo.User;
  * @Version 1.0
  */
 public interface UserDao extends JpaRepository<User, String>, JpaSpecificationExecutor<User> {
+
+    User findByName(String name);
+
+    User findByMobile(String mobile);
 }

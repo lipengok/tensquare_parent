@@ -8,7 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 配置sms任务队列
+ * sms任务队列配置
+ *
  * @Author lipeng
  * @Date 2022/11/30 11:10
  * @Version 1.0
