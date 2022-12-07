@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.*;
 import com.lp.pojo.User;
 import com.lp.server.impl.UserServiceImpl;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -29,6 +31,9 @@ public class UserController {
 
     @Autowired
     private JwtOpera jwtOpera;
+
+    @Autowired
+    private HttpServletRequest request;
 
     /**
      * 发送验证码
@@ -94,7 +99,7 @@ public class UserController {
             Map map = new HashMap<String, Object>();
             map.put("error", e.getMessage());
             map.put("login", login);
-            return new Result(false, StatusCode.ERROR,"登录", map);
+            return new Result(false, StatusCode.ERROR,"登录失败", map);
         }
     }
 
@@ -105,5 +110,25 @@ public class UserController {
         map.put("user", user);
         map.put("token", token);
         return map;
+    }
+
+    /**
+     * 查询所有用户信息
+     *
+     * @return
+     */
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public Result findAll(){
+        // 检查头信息
+        if (jwtOpera.checkPower(request)){
+            try {
+                List<User> list = userService.findAll();
+                return new Result(true, StatusCode.OK,"查询成功", list);
+            }catch (Exception e){
+                return new Result(false, StatusCode.ERROR,"查询失败", e.getMessage());
+            }
+        }else {
+            return new Result(false, StatusCode.ACCESSERROR,"权限不足", null);
+        }
     }
 }

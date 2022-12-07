@@ -3,34 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1ed66375-abc5-41d7-ae1a-79272332ec58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/ReadMe" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/ReadMe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/logs/log_debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/logs/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/logs/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/logs/log_warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/META-INF/tensquare_user.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/UserApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/config/RedisTemplateConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/config/TenSquareConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/config/WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/dao/AdminDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/pojo/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/pojo/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/pojo/entity/SmsCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/redis/RedisOpera.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/server/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/server/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/server/impl/AdminServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/server/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/jwt/JwtOpera.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/jwt/JwtOpera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/server/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/server/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +198,7 @@
       <workItem from="1669942669490" duration="3861000" />
       <workItem from="1670207462320" duration="7413000" />
       <workItem from="1670288309696" duration="16153000" />
-      <workItem from="1670374607105" duration="6625000" />
+      <workItem from="1670374607105" duration="8283000" />
     </task>
     <servers />
   </component>

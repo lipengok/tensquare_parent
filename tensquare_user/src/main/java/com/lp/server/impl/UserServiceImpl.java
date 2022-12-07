@@ -13,10 +13,7 @@ import org.springframework.stereotype.Service;
 import com.lp.pojo.User;
 import com.lp.server.UserService;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -128,5 +125,23 @@ public class UserServiceImpl implements UserService {
         }else{
             return null;
         }
+    }
+
+    /**
+     * 根据用户id删除用户
+     *
+     * @param id
+     */
+    public void deleteById(String id){
+        userDao.delete(id);
+    }
+
+    /**
+     * 查询所有的用户
+     *
+     * @return
+     */
+    public List<User> findAll(){
+        return userDao.findAll();
     }
 }

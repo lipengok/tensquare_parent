@@ -1,5 +1,7 @@
 package com.lp.jwt;
 
+import com.lp.common.entity.Result;
+import com.lp.common.entity.StatusCode;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
@@ -9,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 /**
@@ -77,5 +80,25 @@ public class JwtOpera {
                 .setSigningKey(key)
                 .parseClaimsJws(jwtStr)
                 .getBody();
+    }
+
+    public boolean checkPower(HttpServletRequest request){
+        //获取头信息
+        String authHeader = request.getHeader("Authorization");
+        if(authHeader==null){
+            return false;
+        }
+        if(!authHeader.startsWith("Bearer ")){
+            return false;
+        }
+        String token=authHeader.substring(7);//提取token
+        Claims claims = parseJWT(token);
+        if(claims==null){
+            return false;
+        }
+        if(!"admin".equals(claims.get("roles"))){
+            return false;
+        }
+        return true;
     }
 }
