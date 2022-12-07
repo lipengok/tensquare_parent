@@ -2,6 +2,7 @@ package com.lp.controller;
 
 import com.lp.common.entity.Result;
 import com.lp.common.entity.StatusCode;
+import com.lp.jwt.JwtOpera;
 import com.lp.pojo.entity.Login;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,9 @@ public class UserController {
 
     @Autowired
     private UserServiceImpl userService;
+
+    @Autowired
+    private JwtOpera jwtOpera;
 
     /**
      * 发送验证码
@@ -62,10 +66,11 @@ public class UserController {
      * @param login
      * @return
      */
+    @RequestMapping(value="/loginByName",method= RequestMethod.POST)
     public Result loginByName(@RequestBody Login login){
         try {
             User user = userService.findByNameAndPassword(login.getName(), login.getPsw());
-            return new Result(true, StatusCode.OK,"登录成功", user);
+            return new Result(true, StatusCode.OK,"登录成功", loginRes(user));
         }catch (Exception e){
             Map map = new HashMap<String, Object>();
             map.put("error", e.getMessage());
@@ -80,15 +85,25 @@ public class UserController {
      * @param login
      * @return
      */
+    @RequestMapping(value="/loginByMobile",method= RequestMethod.POST)
     public Result loginByMobile(@RequestBody Login login){
         try {
             User user = userService.findByMobileAndPassword(login.getMobile(), login.getPsw());
-            return new Result(true, StatusCode.OK,"登录成功", user);
+            return new Result(true, StatusCode.OK,"登录成功", loginRes(user));
         }catch (Exception e){
             Map map = new HashMap<String, Object>();
             map.put("error", e.getMessage());
             map.put("login", login);
             return new Result(false, StatusCode.ERROR,"登录", map);
         }
+    }
+
+    private Map<String, Object> loginRes(User user){
+        String token = jwtOpera.createJWT(user.getId(), user.getName(), "user");
+        Map map = new HashMap<String, Object>();
+        map.put("name", user.getName());
+        map.put("user", user);
+        map.put("token", token);
+        return map;
     }
 }

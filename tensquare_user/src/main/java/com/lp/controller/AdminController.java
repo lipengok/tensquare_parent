@@ -2,6 +2,7 @@ package com.lp.controller;
 
 import com.lp.common.entity.Result;
 import com.lp.common.entity.StatusCode;
+import com.lp.jwt.JwtOpera;
 import com.lp.pojo.Admin;
 import com.lp.pojo.entity.Login;
 import com.lp.server.impl.AdminServiceImpl;
@@ -28,6 +29,9 @@ public class AdminController {
     @Autowired
     private AdminServiceImpl adminService;
 
+    @Autowired
+    private JwtOpera jwtOpera;
+
     @RequestMapping(value = "/reg", method = RequestMethod.POST)
     public Result regAdmin(@RequestBody Admin admin){
         try {
@@ -47,7 +51,11 @@ public class AdminController {
     public Result login(@RequestBody Login login){
         Admin admin = adminService.findByNameAndPsw(login.getName(), login.getPsw());
         if (null != admin){
-            return new Result(true, StatusCode.OK,"登录成功", admin);
+            String token = jwtOpera.createJWT(admin.getId(), admin.getName(), "admin");
+            Map map = new HashMap<String, Object>();
+            map.put("name", login.getName());
+            map.put("token", token);
+            return new Result(true, StatusCode.OK,"登录成功", map);
         }else {
             return new Result(false, StatusCode.ERROR,"登录失败", null);
         }

@@ -13,3 +13,26 @@ Spring Security提供了BCryptPasswordEncoder类
 通过方法：
 public String encode(CharSequence rawPassword)
 实现加密。
+
+jwt的组成
+头部+载荷+签证
+头部：{"typ":"JWT","alg":"HS256"}
+载荷：
+    iss: jwt签发者
+    sub: jwt所面向的用户
+    aud: 接收jwt的一方
+    exp: jwt的过期时间，这个过期时间必须要大于签发时间
+    nbf: 定义在什么时间之前，该jwt都是不可用的.
+    iat: jwt的签发时间
+    jti: jwt的唯一身份标识，主要用来作为一次性token,从而回避重放攻击。
+签证：
+    这个部分需要base64加密后的header和base64加密后的payload使用.连接组成的字符
+    串，然后通过header中声明的加密方式进行加盐secret组合加密，然后就构成了jwt的第
+    三部分。
+
+JWT开发有如下需要注意的点：
+1，jwt.properties文件不能直接放到resource文件夹下面，
+得在resource文件夹下面新建一个文件夹，然后将文件jwt.properties放到新建的文件夹里面。
+2，使用注解@ProertiesResource的时候，需要将成员变量的get，set方法写出来，
+不能使用@data注解来免写get，set方法。
+
