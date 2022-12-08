@@ -4,12 +4,12 @@ import com.lp.common.entity.Result;
 import com.lp.common.entity.StatusCode;
 import com.lp.jwt.JwtOpera;
 import com.lp.pojo.entity.Login;
+import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.lp.pojo.User;
 import com.lp.server.impl.UserServiceImpl;
-
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
@@ -129,6 +129,26 @@ public class UserController {
             }
         }else {
             return new Result(false, StatusCode.ACCESSERROR,"权限不足", null);
+        }
+    }
+
+    /**
+     * 根据用户id，查找用户信息
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping(value="/{id}",method= RequestMethod.GET)
+    public Result delete(@PathVariable String id ){
+        try{
+            Claims claims=(Claims) request.getAttribute("admin_claims");
+            if(claims==null){
+                return new Result(true,StatusCode.ACCESSERROR,"无权访问");
+            }
+            User user = userService.findById(id);
+            return new Result(true,StatusCode.OK,"查询成功", user);
+        }catch (Exception e){
+            return new Result(false, StatusCode.ERROR,"查询成功", e.getMessage());
         }
     }
 }

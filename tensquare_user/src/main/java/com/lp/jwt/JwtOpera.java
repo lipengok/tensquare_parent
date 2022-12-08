@@ -82,6 +82,12 @@ public class JwtOpera {
                 .getBody();
     }
 
+    /**
+     * 通过头信息，进行权限认证
+     *
+     * @param request
+     * @return
+     */
     public boolean checkPower(HttpServletRequest request){
         //获取头信息
         String authHeader = request.getHeader("Authorization");
@@ -100,5 +106,32 @@ public class JwtOpera {
             return false;
         }
         return true;
+    }
+
+    /**
+     * 通过头信息，进行权限认证
+     * 为request设置权限类别（admin/user）
+     *
+     * @param request
+     * @return
+     */
+    public boolean checkPowerOpera(HttpServletRequest request){
+        String authHeader = request.getHeader("Authorization");
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            String token = authHeader.substring(7);
+            Claims claims = parseJWT(token);
+            if (claims != null) {
+                if("admin".equals(claims.get("roles"))){
+                    // 请求信息设置为管理员
+                    request.setAttribute("admin_claims", claims);
+                }
+                if("user".equals(claims.get("roles"))){
+                    // 请求信息设置为用户
+                    request.setAttribute("user_claims", claims);
+                }
+            }
+            return true;
+        }
+        return false;
     }
 }

@@ -137,6 +137,16 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
+     * 根据用户id，查找用户
+     *
+     * @param id
+     * @return
+     */
+    public User findById(String id){
+        return userDao.findOne(id);
+    }
+
+    /**
      * 查询所有的用户
      *
      * @return
