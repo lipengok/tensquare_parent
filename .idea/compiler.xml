@@ -8,10 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tensquare_sms" />
+        <module name="tensquare_eureka" />
         <module name="tensquare_base" />
+        <module name="tensquare_qa" />
         <module name="tensquare_article" />
-        <module name="tensquare_user" />
+        <module name="tensquare_friend" />
         <module name="tensquare_spit" />
+        <module name="tensquare_user" />
         <module name="tensquare_search" />
         <module name="tensquare_common" />
       </profile>
@@ -19,7 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tensquare_search" options="-parameters" />
+      <module name="tensquare_search" options="" />
       <module name="tensquare_user" options="" />
     </option>
   </component>

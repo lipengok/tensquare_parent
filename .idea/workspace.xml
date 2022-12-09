@@ -2,16 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ed66375-abc5-41d7-ae1a-79272332ec58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tensquare_base/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/META-INF/tensquare_base.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/BaseApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/controller/EnterpriseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/controller/LabelController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/controller/PlController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/controller/ProblemController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/controller/RecruitController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/dao/ArticleDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/dao/EnterpriseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/dao/LabelDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/dao/PlDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/dao/ProblemDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/dao/RecruitDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/dao/ReplyDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/pojo/Article.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/pojo/Enterprise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/pojo/Label.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/pojo/Pl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/pojo/Problem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/pojo/Recruit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/pojo/Reply.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/redis/ArticleRedis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/ArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/EnterpriseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/LabelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/PlService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/ProblemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/RecruitService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/ReplyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/ArticleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/EnterpriseServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/LabelServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/LabelServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/PlServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/ProblemServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/RecruitServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/com/lp/base/service/impl/ReplyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_base/target/classes/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/src/main/java/com/lp/EurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/target/classes/com/lp/EurekaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/target/classes/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_eureka/tensquare_eureka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/java/com/lp/FriendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/java/com/lp/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/java/com/lp/controller/FriendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/java/com/lp/filter/PowerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/java/com/lp/jwt/JwtOpera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/java/com/lp/pojo/Friend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/resources/jwt/jwt.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_friend/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/src/main/java/com/lp/QaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/src/main/java/com/lp/client/LabelClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/src/main/java/com/lp/controller/ProblemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/target/classes/com/lp/QaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/target/classes/com/lp/client/LabelClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_qa/target/classes/com/lp/controller/ProblemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/logs/log_warn.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/config/RedisTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/config/RedisTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/logs/log_debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/logs/log_error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/logs/log_info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/logs/log_warn.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/BaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/BaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/controller/LabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/controller/LabelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/java/com/lp/base/pojo/Reply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_base/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_base/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensquare_search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_search/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/jwt/JwtOpera.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/jwt/JwtOpera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/server/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/src/main/java/com/lp/server/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/jwt/JwtOpera.class" beforeDir="false" afterPath="$PROJECT_DIR$/tensquare_user/target/classes/com/lp/jwt/JwtOpera.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,30 +142,30 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tensquare_user/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tensquare_friend/src/main/java/com/lp/config" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\github\tensquare_parent\tensquare_user\src\main\resources\jwt" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.lp.server.impl" />
-      <recent name="com.lp" />
+      <recent name="com.lp.filter" />
       <recent name="com.lp.config" />
-      <recent name="com.lp.base.pojo" />
-      <recent name="com.lp.search.init" />
+      <recent name="com.lp.jwt" />
+      <recent name="com.lp" />
+      <recent name="com.lp.server.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\tensquare_parent\tensquare_friend\src\main\java\com\lp\config" />
+      <recent name="E:\github\tensquare_parent\tensquare_friend\src\main\resources" />
+      <recent name="E:\github\tensquare_parent\tensquare_qa\src\main\resources" />
+      <recent name="E:\github\tensquare_parent\tensquare_eureka\src\main\resources" />
       <recent name="E:\github\tensquare_parent\tensquare_user\src\main\resources" />
-      <recent name="E:\github\tensquare_parent\tensquare_sms\src\main\resources" />
-      <recent name="E:\github\tensquare_parent\tensquare.search\src\main\resources" />
-      <recent name="E:\github\tensquare_parent\tensquare.search\src\main\java\com\lp\search" />
-      <recent name="E:\github\tensquare_parent\tensquare_spit\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.QaApplication">
     <configuration name="BaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="tensquare_base" />
       <extension name="coverage">
@@ -118,15 +194,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="tensquare_search" />
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tensquare_eureka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lp.search.*" />
+          <option name="PATTERN" value="com.lp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lp.search.SearchApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lp.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tensquare_qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lp.QaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +229,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lp.SmsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="tensquare_spit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lp.spit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lp.spit.SpitApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,11 +248,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.QaApplication" />
+        <item itemvalue="Spring Boot.BaseApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.SmsApplication" />
-        <item itemvalue="Spring Boot.SearchApplication" />
-        <item itemvalue="Spring Boot.SpitApplication" />
-        <item itemvalue="Spring Boot.BaseApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +282,8 @@
       <workItem from="1670207462320" duration="7413000" />
       <workItem from="1670288309696" duration="16153000" />
       <workItem from="1670374607105" duration="12175000" />
-      <workItem from="1670461159317" duration="1435000" />
+      <workItem from="1670461159317" duration="14508000" />
+      <workItem from="1670547992059" duration="9248000" />
     </task>
     <servers />
   </component>

@@ -49,9 +49,9 @@ public class JwtOpera {
     /**
      * 生成token
      *
-     * @param id
-     * @param subject
-     * @param roles
+     * @param id        签发人id
+     * @param subject   签发人
+     * @param roles     角色
      * @return
      */
     public String createJWT(String id, String subject, String roles) {
@@ -97,7 +97,8 @@ public class JwtOpera {
         if(!authHeader.startsWith("Bearer ")){
             return false;
         }
-        String token=authHeader.substring(7);//提取token
+        //提取token
+        String token=authHeader.substring(7);
         Claims claims = parseJWT(token);
         if(claims==null){
             return false;

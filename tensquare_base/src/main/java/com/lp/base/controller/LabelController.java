@@ -1,24 +1,35 @@
 package com.lp.base.controller;
 
+import com.lp.base.dao.LabelDao;
+import com.lp.base.pojo.Label;
 import com.lp.base.service.impl.LabelServiceImpl;
 import com.lp.common.entity.Result;
 import com.lp.common.entity.StatusCode;
+import com.netflix.discovery.converters.Auto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
 /**
+ * 微服务-标签api
+ *
  * @Author lipeng
  * @Date 2022/11/15 15:50
  * @Version 1.0
  */
+@Slf4j
 @RestController
 @RequestMapping("/label")
 public class LabelController {
 
     @Autowired
     private LabelServiceImpl labelServiceImpl;
+
+    @Autowired
+    private LabelDao labelDao;
+
 
     /**
      * 查询所有标签
@@ -54,6 +65,23 @@ public class LabelController {
             result = new Result(false, StatusCode.ERROR, e.getMessage(), null);
         }finally {
             return result;
+        }
+    }
+
+    /**
+     * 根据标签id，查找标签
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping(value="/{id}", method = RequestMethod.GET)
+    Result findById(@PathVariable String id){
+        log.info("根据label的id[{}]查找标签信息", id);
+        try {
+            Label label = labelDao.findOne(id);
+            return new Result(true, StatusCode.OK, "查询成功", label);
+        }catch (Exception e){
+            return new Result(true, StatusCode.ERROR, "查询shi白", e.getMessage());
         }
     }
 
