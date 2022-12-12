@@ -1,9 +1,9 @@
 package com.lp.controller;
 
+import com.lp.common.entity.Login;
 import com.lp.common.entity.Result;
 import com.lp.common.entity.StatusCode;
 import com.lp.jwt.JwtOpera;
-import com.lp.pojo.entity.Login;
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

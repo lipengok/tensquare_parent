@@ -28,6 +28,9 @@ public class FilterConfig extends WebMvcConfigurationSupport {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(powerFilter).
                 addPathPatterns("/**").
-                excludePathPatterns("/**/login"); // 登录接口不拦截
+                // 登录接口不拦截
+                excludePathPatterns("/**/login").
+                excludePathPatterns("/**/loginByMobile").
+                excludePathPatterns("/**/loginByName");
     }
 }

@@ -55,6 +55,13 @@
             <version>0.7.0</version>
         </dependency>
 
+        <!--eureka-client-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.1.2.RELEASE</version>
+        </dependency>
+
         <dependency>
             <groupId>com.lp</groupId>
             <artifactId>tensquare_common</artifactId>
